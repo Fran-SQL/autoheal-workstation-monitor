@@ -1,0 +1,22 @@
+autoheal-workstation-monitor/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── setup.sh                  # Script de instalación
+├── requirements.txt          # Dependencias Python
+├── monitor/
+│   ├── __init__.py
+│   ├── collector.py          # Recolecta métricas del sistema
+│   ├── responder.py          # Ejecuta acciones correctivas
+│   ├── exporter.py           # Expone métricas vía HTTP
+│   └── logger.py             # Logging estructurado
+├── tests/
+│   ├── test_collector.py
+│   ├── test_responder.py
+│   └── test_exporter.py
+├── database/
+│   └── events.db             # SQLite (puede generarse en runtime)
+├── dashboard/
+│   └── grafana.json          # Configuración de panel
+└── docs/
+    └── architecture.md       # Diseño del sistema

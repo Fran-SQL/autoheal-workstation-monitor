@@ -1,0 +1,23 @@
+# Ignorar archivos de claves
+*.pem
+*.key
+*.crt
+
+# Archivos de entorno
+.env
+*.env
+
+# Ignorar archivos de configuración local
+config.local.json
+
+# Ignorar carpetas temporales
+/tmp
+
+# Archivos temporales y logs
+*.log
+*.tmp
+
+# Archivos de configuración local
+*.local
+
+

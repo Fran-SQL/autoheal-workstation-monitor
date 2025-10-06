@@ -1,4 +1,4 @@
-# 🛠️ AutoHeal Workstation Monitor
+# 🛠️ AutoHeal Workstation Monitor (BETA - En desarrollo)
 
 Sistema ligero de monitorización y respuesta automática para estaciones de trabajo Linux.
 

@@ -17,27 +17,17 @@ Detectar eventos críticos en el sistema (uso excesivo de recursos, servicios ca
 
 ## 📁 Estructura del Proyecto
 autoheal-workstation-monitor/
-├── README.md 
-├── LICENSE
-├── .gitignore 
-├── setup.sh                  # Script de instalación
-├── requirements.txt          # Dependencias Python
-├── monitor/
-│   ├── __init__.py
-│   ├── collector.py          # Recolecta métricas del sistema
-│   ├── responder.py **(ausente)**          # Ejecuta acciones correctivas
-│   ├── exporter.py           # Expone métricas vía HTTP
-│   └── logger.py **(ausente)**             # Logging estructurado
-├── tests/
-│   ├── test_collector.py **(ausente)**
-│   ├── test_responder.py **(ausente)**
-│   └── test_exporter.py **(ausente)**
-├── database/
-│   └── events.db             # SQLite (puede generarse en runtime)
-├── dashboard/ **(ausente)**
-│   └── grafana.json          # Configuración de panel
-└── docs/
-    └── architecture.md       # Diseño del sistema
+| Archivo/Directorio | Descripción |
+| :--- | :--- |
+| **`README.md`** | Instrucciones repositorio. |
+| **`.gitignore`** | Archivos que ignora el repositorio. |
+| **`setup.sh`** | Script de instalación y configuración inicial del entorno. |
+| **`requirements.txt`** | Dependencias del proyecto para Python. |
+| **`monitor/`** | Contiene la lógica del daemon de monitoreo (`collector.py`, `responder.py`, `exporter.py`). |
+| **`tests/`** | Pruebas unitarias y de integración para los módulos. |
+| **`database/events.db`** | Base de datos SQLite para registrar eventos. |
+| **`dashboard/grafana.json`** | Configuración para el panel de Grafana. |
+| **`docs/architecture.md`** | Documentación detallada sobre el diseño del sistema. |
 
 ## 📦 Instalación
 
